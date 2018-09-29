@@ -1,3 +1,40 @@
+## [1.2.0] 2018-08-29
+### Bug fixing
+- Github own repo
+  - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/5](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/5)
+  - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/12](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/12)
+  - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/13](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/13)
+- Github other repos
+  - [https://github.com/creativetimofficial/material-kit-react/issues/36](https://github.com/creativetimofficial/material-kit-react/issues/36)
+  - [https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/68](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/68)
+  - [https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70)
+  - [https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/79](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/79)
+### Major styling changes
+- `src/assets/jss/material-kit-pro-react/components/snackbarContentStyle.jsx`
+- `src/assets/jss/material-kit-pro-react/components/headerStyle.jsx`
+- `src/assets/jss/material-kit-pro-react/views/loginPageStyle.jsx`
+- `src/assets/jss/material-kit-pro-react/views/signupPageStyle.jsx`
+- `src/assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx`
+- `src/assets/scss/plugins/_plugin-nouislider.scss`
+### Deleted dependencies
+- `react-nouislider` (since it was not well maintained)
+### Added dependencies
+- `nouislider`                `12.0.0` (instead of `react-nouislider`)
+### Updated dependencies
+- `@material-ui/core`          `1.5.0`   →     `3.1.1`
+- `@material-ui/icons`         `2.0.2`   →     `3.0.1`
+- `@types/googlemaps`        `3.30.11`   →   `3.30.13`
+- `ajv`                        `6.5.2`   →     `5.0.0`
+- `react`                     `16.4.2`   →    `16.5.2`
+- `react-dom`                 `16.4.2`   →    `16.5.2`
+- `react-image-gallery`       `0.8.10`   →    `0.8.11`
+- `react-scripts`              `1.1.4`   →     `1.1.5`
+- `react-swipeable-views`    `0.12.16`   →    `0.13.0`
+- `eslint-config-prettier`    `^2.9.0`   →     `3.1.0`
+- `eslint-plugin-react`      `^7.10.0`   →    `7.11.1`
+- `prettier`                 `^1.13.7`   →   ` 1.14.3`
+
+
 ## [1.1.0] 2018-08-14
 ### Bug fixing
 - No more use of `react-popper`, no it's beeing used `@material-ui/core/Popper` instead (see `CustomDropdown`)
