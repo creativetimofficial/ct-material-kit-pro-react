@@ -1,4 +1,4 @@
-## [1.3.0] 2019-02-15
+## [1.3.0] 2019-02-13
 ### Bug fixing
 - Dropped dynamic routing
 - Deleted two of the Card inside `src/views/LoginPage/LoginPage.jsx`
