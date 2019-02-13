@@ -1,7 +1,7 @@
 # [Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
 
- ![version](https://img.shields.io/badge/version-1.2.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-1.3.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 ![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/89/original/opt_mkp_react_thumbnail.jpg)
 
@@ -59,29 +59,25 @@ material-kit-pro
 ├── CHANGELOG.md
 ├── README.md
 ├── package.json
-├── .env
 ├── Documentation
 │   ├── assets
-│   │   ├── css
-│   │   ├── img
-│   │   │   └── faces
-│   │   └── js
 │   └── tutorial-components.html
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
+    ├── index.js
+    ├── logo.svg
+    ├── routes
+    │   └── index.jsx
     ├── assets
     │   ├── img
-    │   │   ├── arrow-left.cur
-    │   │   ├── arrow-right.cur
     │   │   ├── assets-for-demo
     │   │   │   ├── example-pages
     │   │   │   ├── ourClients
     │   │   │   ├── presentationViewSectionComponent
     │   │   │   └── sections
-    │   │   │       └── imgs.jsx
     │   │   ├── examples
     │   │   ├── faces
     │   │   ├── flags
@@ -104,8 +100,8 @@ material-kit-pro
     │       ├── core
     │       │   ├── mixins
     │       │   └── variables
-    │       ├── plugins
-    │       └── material-kit-pro-react.scss
+    │       ├── material-kit-pro-react.scss
+    │       └── plugins
     ├── components
     │   ├── Accordion
     │   │   └── Accordion.jsx
@@ -167,10 +163,6 @@ material-kit-pro
     │       ├── Small.jsx
     │       ├── Success.jsx
     │       └── Warning.jsx
-    ├── index.js
-    ├── logo.svg
-    ├── routes
-    │   └── index.jsx
     └── views
         ├── AboutUsPage
         │   ├── AboutUsPage.jsx
@@ -217,6 +209,8 @@ material-kit-pro
         │       ├── SectionBlog.jsx
         │       ├── SectionLatestOffers.jsx
         │       └── SectionProducts.jsx
+        ├── ErrorPage
+        │   └── ErrorPage.jsx
         ├── LandingPage
         │   ├── LandingPage.jsx
         │   └── Sections

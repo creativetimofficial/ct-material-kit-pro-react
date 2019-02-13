@@ -1,3 +1,39 @@
+## [1.3.0] 2019-02-15
+### Bug fixing
+- Dropped dynamic routing
+- Deleted two of the Card inside `src/views/LoginPage/LoginPage.jsx`
+- Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
+### Major styling changes
+- Changes caused by the fact that all colors are now variables and the prettier command
+### Deleted dependencies
+- `node-sass-chokidar`
+- `npm-run-all`
+- `babel-eslint`
+- `eslint`
+### Added dependencies
+- `node-sass` version: **4.11.0**
+### Updated dependencies
+- `@material-ui/core`          *3.1.1*   →     **3.9.2**
+- `@material-ui/icons`         *3.0.1*   →     **3.0.2**
+- `@types/googlemaps`        *3.30.13*   →   **3.30.16**
+- `ajv`                        *5.0.0*   →     **6.8.1**
+- `moment`                    *2.22.2*   →    **2.24.0**
+- `nouislider`                *12.0.0*   →    **13.1.0**
+- `prop-types`                *15.6.2*   →    **15.7.1**
+- `react`                     *16.5.2*   →    **16.8.1**
+- `react-datetime`            *2.15.0*   →    **2.16.3**
+- `react-dom`                 *16.5.2*   →    **16.8.1**
+- `react-image-gallery`       *0.8.11*   →    **0.8.12**
+- `react-scripts`              *1.1.5*   →     **2.1.5**
+- `react-slick`               *0.23.1*   →    **0.23.2**
+- `react-swipeable-views`     *0.13.0*   →    **0.13.1**
+- `eslint-config-prettier`     *3.0.1*   →     **4.0.0**
+- `eslint-plugin-prettier`     *2.6.2*   →     **3.0.1**
+- `eslint-plugin-react`       *7.11.1*   →    **7.12.4**
+- `prettier`                  *1.14.3*   →    **1.16.4**
+
+
+
 ## [1.2.0] 2018-08-29
 ### Bug fixing
 - Github own repo
