@@ -1,6 +1,41 @@
 # Change Log
 
-## [1.7.0] 2019-06-xx
+## [1.8.0] 2019-08-26
+### Bug fixing
+- Rewrote the ISSUE_TEMPLATE
+- Deleted the copyright comments from all files, we only need to keep them inside our index.js and index.html
+- Added script that adds copyrights to the built app
+- Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/41
+- Renamed all the files from `.jsx` to `.js`
+- Changed the `withStyles` function from Material-UI with the `makeStyles` function (integration with other frameworks should now be easy)
+- React Hooks is now supported
+### Major style changes
+- `src/assets/jss/material-kit-pro-react/components/cardBodyStyle.jsx`
+- `src/assets/scss/plugins/_plugin-nouislider.scss`
+### Deleted components
+### Added components
+### Deleted dependencies
+### Added dependencies
++ gulp@4.0.2
++ gulp-append-prepend@1.0.8
+### Updated dependencies
+```
+@material-ui/core         4.1.0   →    4.3.2
+@material-ui/icons        4.1.0   →    4.2.1
+nouislider               13.1.5   →   14.0.2
+react-image-gallery      0.8.17   →   0.8.18
+@types/googlemaps        3.36.4   →   3.37.0
+eslint-config-prettier    4.3.0   →    6.0.0
+eslint-plugin-react      7.13.0   →   7.14.3
+typescript                3.5.1   →    3.5.3
+react                    16.8.6   →   16.9.0
+react-dom                16.8.6   →   16.9.0
+react-scripts             3.0.1   →    3.1.0
+react-slick              0.24.0   →   0.25.2
+@types/googlemaps        3.37.0   →   3.37.3
+```
+
+## [1.7.0] 2019-06-19
 ### Warning
 - **We've skipped versions 1.4.0, 1.5.0, 1.6.0 so that all React Material products would be on the same version.**
 - **All linting errors are solved now, but due to google analytics stuff, we've needed to add target="_blank" to our links, so this lint error still exists.**

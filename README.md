@@ -1,7 +1,7 @@
 # [Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
 
- ![version](https://img.shields.io/badge/version-1.7.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-1.8.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 ![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/89/original/opt_mkp_react_thumbnail.jpg)
 
@@ -57,30 +57,41 @@ Within the download you'll find the following directories and files:
 material-kit-pro
 .
 ├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
 ├── README.md
+├── gulpfile.js
+├── jsconfig.json
 ├── package.json
 ├── Documentation
 │   ├── assets
+│   │   ├── css
+│   │   ├── img
+│   │   │   └── faces
+│   │   └── js
 │   └── tutorial-components.html
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
-    ├── index.js
-    ├── logo.svg
-    ├── routes
-    │   └── index.jsx
     ├── assets
+    │   ├── css
+    │   │   ├── material-kit-pro-react.css
+    │   │   ├── material-kit-pro-react.css.map
+    │   │   └── material-kit-pro-react.min.css
     │   ├── img
+    │   │   ├── arrow-left.cur
+    │   │   ├── arrow-right.cur
     │   │   ├── assets-for-demo
     │   │   │   ├── example-pages
     │   │   │   ├── ourClients
     │   │   │   ├── presentationViewSectionComponent
     │   │   │   └── sections
+    │   │   │       └── imgs.js
     │   │   ├── examples
     │   │   ├── faces
     │   │   ├── flags
+    │   │   ├── loading-bubbles.svg
     │   │   └── sections
     │   ├── jss
     │   │   ├── material-kit-pro-react
@@ -94,167 +105,169 @@ material-kit-pro
     │   │   │       ├── landingPageSections
     │   │   │       ├── presentationSections
     │   │   │       ├── pricingSections
-    │   │   │       └── sectionsSections
-    │   │   └── material-kit-pro-react.jsx
+    │   │   │       ├── sectionsSections
+    │   │   └── material-kit-pro-react.js
     │   └── scss
     │       ├── core
     │       │   ├── mixins
     │       │   └── variables
-    │       ├── material-kit-pro-react.scss
-    │       └── plugins
+    │       ├── plugins
+    │       └── material-kit-pro-react.scss
     ├── components
     │   ├── Accordion
-    │   │   └── Accordion.jsx
+    │   │   └── Accordion.js
     │   ├── Badge
-    │   │   └── Badge.jsx
+    │   │   └── Badge.js
     │   ├── Card
-    │   │   ├── Card.jsx
-    │   │   ├── CardAvatar.jsx
-    │   │   ├── CardBody.jsx
-    │   │   ├── CardFooter.jsx
-    │   │   └── CardHeader.jsx
+    │   │   ├── Card.js
+    │   │   ├── CardAvatar.js
+    │   │   ├── CardBody.js
+    │   │   ├── CardFooter.js
+    │   │   └── CardHeader.js
     │   ├── Clearfix
-    │   │   └── Clearfix.jsx
+    │   │   └── Clearfix.js
     │   ├── CustomButtons
-    │   │   └── Button.jsx
+    │   │   └── Button.js
     │   ├── CustomDropdown
-    │   │   └── CustomDropdown.jsx
+    │   │   └── CustomDropdown.js
     │   ├── CustomFileInput
-    │   │   └── CustomFileInput.jsx
+    │   │   └── CustomFileInput.js
     │   ├── CustomInput
-    │   │   └── CustomInput.jsx
+    │   │   └── CustomInput.js
     │   ├── CustomLinearProgress
-    │   │   └── CustomLinearProgress.jsx
+    │   │   └── CustomLinearProgress.js
     │   ├── CustomTabs
-    │   │   └── CustomTabs.jsx
+    │   │   └── CustomTabs.js
     │   ├── CustomUpload
-    │   │   └── ImageUpload.jsx
+    │   │   └── ImageUpload.js
     │   ├── Footer
-    │   │   └── Footer.jsx
+    │   │   └── Footer.js
     │   ├── Grid
-    │   │   ├── GridContainer.jsx
-    │   │   └── GridItem.jsx
+    │   │   ├── GridContainer.js
+    │   │   └── GridItem.js
     │   ├── Header
-    │   │   ├── Header.jsx
-    │   │   └── HeaderLinks.jsx
+    │   │   ├── Header.js
+    │   │   └── HeaderLinks.js
     │   ├── InfoArea
-    │   │   └── InfoArea.jsx
+    │   │   └── InfoArea.js
     │   ├── Instruction
-    │   │   └── Instruction.jsx
+    │   │   └── Instruction.js
     │   ├── Media
-    │   │   └── Media.jsx
+    │   │   └── Media.js
     │   ├── NavPills
-    │   │   └── NavPills.jsx
+    │   │   └── NavPills.js
     │   ├── Pagination
-    │   │   └── Pagination.jsx
+    │   │   └── Pagination.js
     │   ├── Parallax
-    │   │   └── Parallax.jsx
+    │   │   └── Parallax.js
     │   ├── Snackbar
-    │   │   └── SnackbarContent.jsx
+    │   │   └── SnackbarContent.js
     │   ├── Table
-    │   │   └── Table.jsx
+    │   │   └── Table.js
     │   └── Typography
-    │       ├── Danger.jsx
-    │       ├── Info.jsx
-    │       ├── Muted.jsx
-    │       ├── Primary.jsx
-    │       ├── Quote.jsx
-    │       ├── Rose.jsx
-    │       ├── Small.jsx
-    │       ├── Success.jsx
-    │       └── Warning.jsx
+    │       ├── Danger.js
+    │       ├── Info.js
+    │       ├── Muted.js
+    │       ├── Primary.js
+    │       ├── Quote.js
+    │       ├── Rose.js
+    │       ├── Small.js
+    │       ├── Success.js
+    │       └── Warning.js
+    ├── index.js
+    ├── logo.svg
     └── views
         ├── AboutUsPage
-        │   ├── AboutUsPage.jsx
+        │   ├── AboutUsPage.js
         │   └── Sections
-        │       ├── SectionContact.jsx
-        │       ├── SectionDescription.jsx
-        │       ├── SectionOffice.jsx
-        │       ├── SectionServices.jsx
-        │       └── SectionTeam.jsx
+        │       ├── SectionContact.js
+        │       ├── SectionDescription.js
+        │       ├── SectionOffice.js
+        │       ├── SectionServices.js
+        │       └── SectionTeam.js
         ├── BlogPostPage
-        │   ├── BlogPostPage.jsx
+        │   ├── BlogPostPage.js
         │   └── Sections
-        │       ├── SectionBlogInfo.jsx
-        │       ├── SectionComments.jsx
-        │       ├── SectionSimilarStories.jsx
-        │       └── SectionText.jsx
+        │       ├── SectionBlogInfo.js
+        │       ├── SectionComments.js
+        │       ├── SectionSimilarStories.js
+        │       └── SectionText.js
         ├── BlogPostsPage
-        │   ├── BlogPostsPage.jsx
+        │   ├── BlogPostsPage.js
         │   └── Sections
-        │       ├── SectionImage.jsx
-        │       ├── SectionInterested.jsx
-        │       ├── SectionPills.jsx
-        │       └── SubscribeLine.jsx
+        │       ├── SectionImage.js
+        │       ├── SectionInterested.js
+        │       ├── SectionPills.js
+        │       └── SubscribeLine.js
         ├── ComponentsPage
-        │   ├── ComponentsPage.jsx
+        │   ├── ComponentsPage.js
         │   └── Sections
-        │       ├── SectionBasics.jsx
-        │       ├── SectionCards.jsx
-        │       ├── SectionCarousel.jsx
-        │       ├── SectionContentAreas.jsx
-        │       ├── SectionFooter.jsx
-        │       ├── SectionJavascript.jsx
-        │       ├── SectionNavbars.jsx
-        │       ├── SectionNotifications.jsx
-        │       ├── SectionPills.jsx
-        │       ├── SectionPreFooter.jsx
-        │       ├── SectionTabs.jsx
-        │       └── SectionTypography.jsx
+        │       ├── SectionBasics.js
+        │       ├── SectionCards.js
+        │       ├── SectionCarousel.js
+        │       ├── SectionContentAreas.js
+        │       ├── SectionFooter.js
+        │       ├── SectionJavascript.js
+        │       ├── SectionNavbars.js
+        │       ├── SectionNotifications.js
+        │       ├── SectionPills.js
+        │       ├── SectionPreFooter.js
+        │       ├── SectionTabs.js
+        │       └── SectionTypography.js
         ├── ContactUsPage
-        │   └── ContactUsPage.jsx
+        │   └── ContactUsPage.js
         ├── EcommercePage
-        │   ├── EcommercePage.jsx
+        │   ├── EcommercePage.js
         │   └── Sections
-        │       ├── SectionBlog.jsx
-        │       ├── SectionLatestOffers.jsx
-        │       └── SectionProducts.jsx
+        │       ├── SectionBlog.js
+        │       ├── SectionLatestOffers.js
+        │       └── SectionProducts.js
         ├── ErrorPage
-        │   └── ErrorPage.jsx
+        │   └── ErrorPage.js
         ├── LandingPage
-        │   ├── LandingPage.jsx
+        │   ├── LandingPage.js
         │   └── Sections
-        │       ├── SectionProduct.jsx
-        │       ├── SectionTeam.jsx
-        │       └── SectionWork.jsx
+        │       ├── SectionProduct.js
+        │       ├── SectionTeam.js
+        │       └── SectionWork.js
         ├── LoginPage
-        │   └── LoginPage.jsx
+        │   └── LoginPage.js
         ├── PresentationPage
-        │   ├── PresentationPage.jsx
+        │   ├── PresentationPage.js
         │   └── Sections
-        │       ├── SectionCards.jsx
-        │       ├── SectionComponents.jsx
-        │       ├── SectionContent.jsx
-        │       ├── SectionDescription.jsx
-        │       ├── SectionExamples.jsx
-        │       ├── SectionFreeDemo.jsx
-        │       ├── SectionOverview.jsx
-        │       ├── SectionPricing.jsx
-        │       └── SectionSections.jsx
+        │       ├── SectionCards.js
+        │       ├── SectionComponents.js
+        │       ├── SectionContent.js
+        │       ├── SectionDescription.js
+        │       ├── SectionExamples.js
+        │       ├── SectionFreeDemo.js
+        │       ├── SectionOverview.js
+        │       ├── SectionPricing.js
+        │       └── SectionSections.js
         ├── PricingPage
-        │   ├── PricingPage.jsx
+        │   ├── PricingPage.js
         │   └── Sections
-        │       ├── SectionFeatures.jsx
-        │       └── SectionPricing.jsx
+        │       ├── SectionFeatures.js
+        │       └── SectionPricing.js
         ├── ProductPage
-        │   └── ProductPage.jsx
+        │   └── ProductPage.js
         ├── ProfilePage
-        │   └── ProfilePage.jsx
+        │   └── ProfilePage.js
         ├── SectionsPage
         │   ├── Sections
-        │   │   ├── SectionBlogs.jsx
-        │   │   ├── SectionContacts.jsx
-        │   │   ├── SectionFeatures.jsx
-        │   │   ├── SectionHeaders.jsx
-        │   │   ├── SectionPricing.jsx
-        │   │   ├── SectionProjects.jsx
-        │   │   ├── SectionTeams.jsx
-        │   │   └── SectionTestimonials.jsx
-        │   └── SectionsPage.jsx
+        │   │   ├── SectionBlogs.js
+        │   │   ├── SectionContacts.js
+        │   │   ├── SectionFeatures.js
+        │   │   ├── SectionHeaders.js
+        │   │   ├── SectionPricing.js
+        │   │   ├── SectionProjects.js
+        │   │   ├── SectionTeams.js
+        │   │   └── SectionTestimonials.js
+        │   └── SectionsPage.js
         ├── ShoppingCartPage
-        │   └── ShoppingCartPage.jsx
+        │   └── ShoppingCartPage.js
         └── SignupPage
-            └── SignupPage.jsx
+            └── SignupPage.js
 ```
 
 
