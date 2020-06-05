@@ -1,5 +1,53 @@
 # Change Log
 
+## [1.9.0] 2020-06-05
+### Bug fixing
+- Changed the usage of `react-image-gallery` to new API, check `src/views/ProductPage/ProductPage.js`
+- Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/37 and https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/64 by adding for the `src/components/CustomFileInput/CustomFileInput.js` and `src/components/CustomUpload/ImageUpload.js` an `onChange` function that returns the uploaded files so people can send these to their back-end, API etc.
+- Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/41
+- Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/46
+- Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/51
+- Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/60
+### Major style changes
+- Move the keyframes from `src/assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle.js` into scss file `src/assets/scss/core/_keyframes.scss`
+- `src/assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.js` add primary color on hover for these 3 components
+- `src/assets/jss/material-kit-pro-react/views/ecommerceSections/productsStyle.js` delete the hover effect for checkboxes
+- `src/assets/scss/plugins/_plugin-react-image-gallery.scss` due to new `react-image-gallery` API
+- `src/assets/jss/material-kit-pro-react/views/productStyle.js` due to new `react-image-gallery` API
+- `src/assets/css/material-kit-pro-react.css` due to above changes
+- `src/assets/css/material-kit-pro-react.css.map` due to above changes
+- `src/assets/css/material-kit-pro-react.min.css` due to above changes
+### Deleted components
+### Added components
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+```
+@material-ui/core         4.3.2   →    4.10.1
+@material-ui/icons        4.2.1   →     4.9.1
+animate.css               3.7.2   →     4.1.0
+history                   4.9.0   →    4.10.1
+moment                   2.24.0   →    2.26.0
+node-sass                4.12.0   →    4.14.1
+nouislider               14.0.2   →    14.5.0
+react                    16.9.0   →   16.13.1
+react-dom                16.9.0   →   16.13.1
+react-image-gallery      0.8.18   →     1.0.7
+react-router-dom          5.0.1   →     5.2.0
+react-scripts             3.1.0   →     3.4.1
+react-slick              0.25.2   →    0.26.1
+react-swipeable-views    0.13.3   →    0.13.9
+@types/googlemaps        3.37.3   →    3.39.6
+eslint-config-prettier    6.0.0   →    6.11.0
+eslint-plugin-prettier    3.1.0   →     3.1.3
+eslint-plugin-react      7.14.3   →    7.20.0
+prettier                 1.18.2   →     2.0.5
+typescript                3.5.3   →     3.9.3
+```
+### Warning
+_While in development some of the plugins that were used for this product will throw some warnings - note, this only happens in development, the UI or the functionality of the product is not affected, also, if the issues will persist in React 17, we'll drop usage of those plugins, and replace them with other ones._
+_Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
+
 ## [1.8.0] 2019-08-26
 ### Bug fixing
 - Rewrote the ISSUE_TEMPLATE
