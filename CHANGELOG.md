@@ -1,27 +1,180 @@
 # Change Log
 
-## [1.10.0] 2021-05-12
+## [2.0.0] 2022-01-07
+
 ### Bug fixing
+
+### Major style changes
+
+- Migration from Material-UI to MUI v5.
+- Migration from JSS to `styled` api, emotion and `sx` prop.
+- Product folders and files structured are updated: [README](https://github.com/creativetimofficial/ct-material-kit-pro-react/blob/main/README.md)
+- New components are added
+- New example blocks are added
+- Components and Example Blocks are now totally customizable and reusable
+
+### Deleted components
+
+- Accordion
+- Badge
+- Card
+- Clearfix
+- CustomButtons
+- CustomDropdown
+- CustomFileInput
+- CustomInput
+- CustomLinearProgress
+- CustomTabs
+- CustomUpload
+- Footer
+- Grid
+- Header
+- InfoArea
+- Intruction
+- Media
+- NavPills
+- Pagination
+- Parallax
+- Snackbar
+- Table
+- Typography
+
+### Added components
+
+- MKAlert
+- MKAvatar
+- MKBadge
+- MKBox
+- MKButton
+- MKDatePicker
+- MKInput
+- MKPagination
+- MKProgress
+- MKSnackbar
+- MKSocialButton
+- MKTypography
+- Breadcrumbs
+- Cards
+  - BackgroundCards
+    - ColoredBackgroundCard
+    - DefaultBackgroundCard
+    - InfoBackgroundCard
+    - SimpleBackgroundCard
+  - BlogCards
+    - BackgroundBlogCard
+    - CenteredBlogCard
+    - DefaultBlogCard
+    - RaisedBlogCard
+    - SimpleBlogCard
+    - TransparentBlogCard
+  - BookingCards
+    - DefaultBookingCard
+    - SimpleBookingCard
+  - CounterCards
+    - DefaultCounterCard
+  - InfoCards
+    - DefaultInfoCard
+    - FilledInfoCard
+    - SimpleInfoCard
+  - PricingCards
+    - DefaultPricingCard
+    - SimplePricingCard
+  - ReviewCards
+    - ComplexReviewCard
+    - DefaultReviewCard
+    - MiniReviewCard
+    - SimpleReviewCard
+  - RotatingCard
+  - TeamCards
+    - HorizontalTeamCard
+    - TransparentTeamCard
+- Footers
+  - CenteredFooter
+  - DefaultFooter
+  - DetailedFooter
+  - SimpleFooter
+- Navbars
+  - DefaultNavbar
+- Tables
+  - Table
+
+### Deleted dependencies
+
+```
+@material-ui/core
+@material-ui/icons
+animate.css
+classnames
+moment
+node-sass
+nouislider
+react-animate-on-scroll
+react-datetime
+react-image-gallery
+react-slick
+react-tagsinput
+```
+
+### Added dependencies
+
+```
+@mui/material
+@mui/icons-material
+@mui/styled-engine
+@emotion/cache
+@emotion/react
+@emotion/styled
+@testing-library/jest-dom
+@testing-library/react":
+@testing-library/user-event
+chroma-js
+flatpickr
+prop-types
+react-flatpickr
+react-copy-to-clipboard
+react-countup
+react-syntax-highlighter
+rellax
+swiper
+typed.js
+uuid
+web-vitals
+```
+
+### Updated dependencies
+
+### Warning
+
+## [1.10.0] 2021-05-12
+
+### Bug fixing
+
 - https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/82
 - https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/78
 - https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/76
 - https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/69
 - https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/49
+
 ### Major style changes
 
 ### Deleted components
 
 ### Added components
-+ `@babel/core@7.14.0` (to stop some of the console warnings)
+
+- `@babel/core@7.14.0` (to stop some of the console warnings)
+
 ### Deleted dependencies
+
 - history (We'll use `BrowserRouter` instead of `Router` and `history`)
 - `react-google-maps` (We'll use simple Google Maps API)
 - `@types/googlemaps`
 - `@types/markerclustererplus`
 - `react-swipeable-views` (no longer maintained)
+
 ### Added dependencies
 
 ### Updated dependencies
+
 ```
 @material-ui/core         4.10.1   →   4.11.4
 @material-ui/icons         4.9.1   →   4.11.2
@@ -43,25 +196,33 @@ eslint-plugin-react       7.20.0   →   7.23.2
 prettier                   2.0.5   →    2.3.0
 typescript                 3.9.3   →    4.2.4
 ```
+
 ### Warning
+
 _Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
+
 ```
 npm WARN react-animate-on-scroll@2.1.5 requires a peer of react@>= 15.4.1 < 17.0.0-0 but none is installed. You must install peer dependencies yourself.
 npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
 npm WARN react-tagsinput@3.19.0 requires a peer of react@^16.0.0 || ^15.0.0 || ^0.14.0 but none is installed. You must install peer dependencies yourself.
 npm WARN react-swipeable@5.5.1 requires a peer of react@^16.0.0-0 but none is installed. You must install peer dependencies yourself.
 ```
+
 _You will also have the following message: found 80 vulnerabilities (1 low, 79 moderate). This comes from react-scripts, and will be fixed in the next version. NOTE: the product works as expected with these vulnerabilities._
 
 ## [1.9.0] 2020-06-05
+
 ### Bug fixing
+
 - Changed the usage of `react-image-gallery` to new API, check `src/views/ProductPage/ProductPage.js`
 - Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/37 and https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/64 by adding for the `src/components/CustomFileInput/CustomFileInput.js` and `src/components/CustomUpload/ImageUpload.js` an `onChange` function that returns the uploaded files so people can send these to their back-end, API etc.
 - Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/41
 - Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/46
 - Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/51
 - Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/60
+
 ### Major style changes
+
 - Move the keyframes from `src/assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle.js` into scss file `src/assets/scss/core/_keyframes.scss`
 - `src/assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.js` add primary color on hover for these 3 components
 - `src/assets/jss/material-kit-pro-react/views/ecommerceSections/productsStyle.js` delete the hover effect for checkboxes
@@ -70,11 +231,17 @@ _You will also have the following message: found 80 vulnerabilities (1 low, 79 m
 - `src/assets/css/material-kit-pro-react.css` due to above changes
 - `src/assets/css/material-kit-pro-react.css.map` due to above changes
 - `src/assets/css/material-kit-pro-react.min.css` due to above changes
+
 ### Deleted components
+
 ### Added components
+
 ### Deleted dependencies
+
 ### Added dependencies
+
 ### Updated dependencies
+
 ```
 @material-ui/core         4.3.2   →    4.10.1
 @material-ui/icons        4.2.1   →     4.9.1
@@ -97,12 +264,16 @@ eslint-plugin-react      7.14.3   →    7.20.0
 prettier                 1.18.2   →     2.0.5
 typescript                3.5.3   →     3.9.3
 ```
+
 ### Warning
+
 _While in development some of the plugins that were used for this product will throw some warnings - note, this only happens in development, the UI or the functionality of the product is not affected, also, if the issues will persist in React 17, we'll drop usage of those plugins, and replace them with other ones._
 _Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
 
 ## [1.8.0] 2019-08-26
+
 ### Bug fixing
+
 - Rewrote the ISSUE_TEMPLATE
 - Deleted the copyright comments from all files, we only need to keep them inside our index.js and index.html
 - Added script that adds copyrights to the built app
@@ -110,16 +281,25 @@ _Warnings might appear while doing an npm install - they do not affect the UI or
 - Renamed all the files from `.jsx` to `.js`
 - Changed the `withStyles` function from Material-UI with the `makeStyles` function (integration with other frameworks should now be easy)
 - React Hooks is now supported
+
 ### Major style changes
+
 - `src/assets/jss/material-kit-pro-react/components/cardBodyStyle.jsx`
 - `src/assets/scss/plugins/_plugin-nouislider.scss`
+
 ### Deleted components
+
 ### Added components
+
 ### Deleted dependencies
+
 ### Added dependencies
-+ gulp@4.0.2
-+ gulp-append-prepend@1.0.8
+
+- gulp@4.0.2
+- gulp-append-prepend@1.0.8
+
 ### Updated dependencies
+
 ```
 @material-ui/core         4.1.0   →    4.3.2
 @material-ui/icons        4.1.0   →    4.2.1
@@ -137,25 +317,38 @@ react-slick              0.24.0   →   0.25.2
 ```
 
 ## [1.7.0] 2019-06-19
+
 ### Warning
+
 - **We've skipped versions 1.4.0, 1.5.0, 1.6.0 so that all React Material products would be on the same version.**
-- **All linting errors are solved now, but due to google analytics stuff, we've needed to add target="_blank" to our links, so this lint error still exists.**
+- **All linting errors are solved now, but due to google analytics stuff, we've needed to add target="\_blank" to our links, so this lint error still exists.**
+
 ### Bug fixing
+
 - Bugs from updated dependencies
 - Removed `.env` file, and replaced it with the `jsconfig.json` file
-- Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
+- Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for _.jsx_, _.js_, _.html_ and _.css_ files
 - Changed all string refs to `React.createRef()`
 - Added types validation in each component
 - Solved linting issues
 - Solved https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/34
+
 ### Major style changes
+
 ### Deleted components
+
 - `src/routes/index.jsx`
+
 ### Added components
+
 ### Deleted dependencies
+
 ### Added dependencies
+
 - typescript@3.5.1 (To stop console warnings)
+
 ### Updated dependencies
+
 ```
 @material-ui/core          3.9.2   →    4.1.0
 @material-ui/icons         3.0.2   →    4.1.0
@@ -179,46 +372,54 @@ eslint-plugin-react       7.12.4   →   7.13.0
 prettier                  1.16.4   →   1.18.2
 ```
 
-
-
 ## [1.3.0] 2019-02-15
+
 ### Bug fixing
+
 - Dropped dynamic routing
 - Deleted two of the Card inside `src/views/LoginPage/LoginPage.jsx`
-- Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
+- Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for _.jsx_, _.js_, _.html_ and _.css_ files
+
 ### Major styling changes
+
 - Changes caused by the fact that all colors are now variables and the prettier command
+
 ### Deleted dependencies
+
 - `node-sass-chokidar`
 - `npm-run-all`
 - `babel-eslint`
 - `eslint`
+
 ### Added dependencies
+
 - `node-sass` version: **4.11.0**
+
 ### Updated dependencies
-- `@material-ui/core`          *3.1.1*   →     **3.9.2**
-- `@material-ui/icons`         *3.0.1*   →     **3.0.2**
-- `@types/googlemaps`        *3.30.13*   →   **3.30.16**
-- `ajv`                        *5.0.0*   →     **6.8.1**
-- `moment`                    *2.22.2*   →    **2.24.0**
-- `nouislider`                *12.0.0*   →    **13.1.0**
-- `prop-types`                *15.6.2*   →    **15.7.1**
-- `react`                     *16.5.2*   →    **16.8.1**
-- `react-datetime`            *2.15.0*   →    **2.16.3**
-- `react-dom`                 *16.5.2*   →    **16.8.1**
-- `react-image-gallery`       *0.8.11*   →    **0.8.12**
-- `react-scripts`              *1.1.5*   →     **2.1.5**
-- `react-slick`               *0.23.1*   →    **0.23.2**
-- `react-swipeable-views`     *0.13.0*   →    **0.13.1**
-- `eslint-config-prettier`     *3.0.1*   →     **4.0.0**
-- `eslint-plugin-prettier`     *2.6.2*   →     **3.0.1**
-- `eslint-plugin-react`       *7.11.1*   →    **7.12.4**
-- `prettier`                  *1.14.3*   →    **1.16.4**
 
-
+- `@material-ui/core` _3.1.1_ → **3.9.2**
+- `@material-ui/icons` _3.0.1_ → **3.0.2**
+- `@types/googlemaps` _3.30.13_ → **3.30.16**
+- `ajv` _5.0.0_ → **6.8.1**
+- `moment` _2.22.2_ → **2.24.0**
+- `nouislider` _12.0.0_ → **13.1.0**
+- `prop-types` _15.6.2_ → **15.7.1**
+- `react` _16.5.2_ → **16.8.1**
+- `react-datetime` _2.15.0_ → **2.16.3**
+- `react-dom` _16.5.2_ → **16.8.1**
+- `react-image-gallery` _0.8.11_ → **0.8.12**
+- `react-scripts` _1.1.5_ → **2.1.5**
+- `react-slick` _0.23.1_ → **0.23.2**
+- `react-swipeable-views` _0.13.0_ → **0.13.1**
+- `eslint-config-prettier` _3.0.1_ → **4.0.0**
+- `eslint-plugin-prettier` _2.6.2_ → **3.0.1**
+- `eslint-plugin-react` _7.11.1_ → **7.12.4**
+- `prettier` _1.14.3_ → **1.16.4**
 
 ## [1.2.0] 2018-08-29
+
 ### Bug fixing
+
 - Github own repo
   - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/5](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/5)
   - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/12](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/12)
@@ -228,60 +429,75 @@ prettier                  1.16.4   →   1.18.2
   - [https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/68](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/68)
   - [https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70)
   - [https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/79](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/79)
+
 ### Major styling changes
+
 - `src/assets/jss/material-kit-pro-react/components/snackbarContentStyle.jsx`
 - `src/assets/jss/material-kit-pro-react/components/headerStyle.jsx`
 - `src/assets/jss/material-kit-pro-react/views/loginPageStyle.jsx`
 - `src/assets/jss/material-kit-pro-react/views/signupPageStyle.jsx`
 - `src/assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx`
 - `src/assets/scss/plugins/_plugin-nouislider.scss`
-### Deleted dependencies
-- `react-nouislider` (since it was not well maintained)
-### Added dependencies
-- `nouislider`                `12.0.0` (instead of `react-nouislider`)
-### Updated dependencies
-- `@material-ui/core`          `1.5.0`   →     `3.1.1`
-- `@material-ui/icons`         `2.0.2`   →     `3.0.1`
-- `@types/googlemaps`        `3.30.11`   →   `3.30.13`
-- `ajv`                        `6.5.2`   →     `5.0.0`
-- `react`                     `16.4.2`   →    `16.5.2`
-- `react-dom`                 `16.4.2`   →    `16.5.2`
-- `react-image-gallery`       `0.8.10`   →    `0.8.11`
-- `react-scripts`              `1.1.4`   →     `1.1.5`
-- `react-swipeable-views`    `0.12.16`   →    `0.13.0`
-- `eslint-config-prettier`    `^2.9.0`   →     `3.1.0`
-- `eslint-plugin-react`      `^7.10.0`   →    `7.11.1`
-- `prettier`                 `^1.13.7`   →   ` 1.14.3`
 
+### Deleted dependencies
+
+- `react-nouislider` (since it was not well maintained)
+
+### Added dependencies
+
+- `nouislider` `12.0.0` (instead of `react-nouislider`)
+
+### Updated dependencies
+
+- `@material-ui/core` `1.5.0` → `3.1.1`
+- `@material-ui/icons` `2.0.2` → `3.0.1`
+- `@types/googlemaps` `3.30.11` → `3.30.13`
+- `ajv` `6.5.2` → `5.0.0`
+- `react` `16.4.2` → `16.5.2`
+- `react-dom` `16.4.2` → `16.5.2`
+- `react-image-gallery` `0.8.10` → `0.8.11`
+- `react-scripts` `1.1.4` → `1.1.5`
+- `react-swipeable-views` `0.12.16` → `0.13.0`
+- `eslint-config-prettier` `^2.9.0` → `3.1.0`
+- `eslint-plugin-react` `^7.10.0` → `7.11.1`
+- `prettier` `^1.13.7` → ` 1.14.3`
 
 ## [1.1.0] 2018-08-14
+
 ### Bug fixing
+
 - No more use of `react-popper`, no it's beeing used `@material-ui/core/Popper` instead (see `CustomDropdown`)
 - Github issues
   - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/1](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/1)
   - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/2](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/2)
   - [https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/3](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues/3)
+
 ### Major styling changes
+
 - Added styles for `svg`'s, **font-awesome** classes and `.material-icons` class inside
   - `src/assets/jss/material-kit-pro-react/components/buttonStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/components/cardStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/components/customInputStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/components/infoStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/componentsSections/contentAreas.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/componentsSections/sectionCards.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/presentationSections/overviewStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/sectionsSections/pricingStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/sectionsSections/testimonialsStyle.jsx`
-	- `src/assets/jss/material-kit-pro-react/views/shoppingCartStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/components/cardStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/components/customInputStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/components/infoStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/componentsSections/contentAreas.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/componentsSections/sectionCards.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/presentationSections/overviewStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/sectionsSections/pricingStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/sectionsSections/testimonialsStyle.jsx`
+  - `src/assets/jss/material-kit-pro-react/views/shoppingCartStyle.jsx`
 - Others
   - `src/assets/jss/material-kit-pro-react/views/productStyle.jsx`
+
 ### Deleted dependencies
+
 - `react-parallax v1.7.0`
+
 ### Updated dependencies
+
 - `@material-ui/core v1.3.1` to `@material-ui/core v1.5.0`
 - `@material-ui/icons v1.1.0` to `@material-ui/icons v2.0.2`
 - `@types/googlemaps v3.30.8` to `@types/googlemaps v3.30.11`
@@ -298,6 +514,8 @@ prettier                  1.16.4   →   1.18.2
 - `react-swipeable-views v0.12.13` to `react-swipeable-views v0.12.16`
 
 ## [1.0.0] 2018-07-20
+
 ### Original Release
+
 - Added Material-UI as base framework
 - Added design from Material Dashboard by Creative Tim
