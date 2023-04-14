@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.1.0] 2023-04-14
+
+- Update to React 18
+- Update dependencies and dev-dependencies
+
 ## [2.0.0] 2022-01-07
 
 ### Bug fixing
@@ -518,4 +523,4 @@ prettier                  1.16.4   →   1.18.2
 ### Original Release
 
 - Added Material-UI as base framework
-- Added design from Material Dashboard by Creative Tim
+- Added design from Material Kit by Creative Tim
