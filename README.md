@@ -41,6 +41,7 @@ During the development of this dashboard, we have used many existing resources f
 - [TypedJS](https://github.com/mattboldt/typed.js/) - A JavaScript Typing Animation Library.
 - [ChromaJS](https://gka.github.io/chroma.js/) - A small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.
 - [UUID](https://github.com/uuidjs/uuid) - JavaScript library for generating random id numbers.
+- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Material Kit 2 PRO React. You can use it to gain insights into your sources of traffic.
 
 Let us know your thoughts below. And good luck with development!
 
@@ -187,6 +188,7 @@ At present, we officially aim to support the last two versions of the following 
 - [License Agreement](https://www.creative-tim.com/license?ref=readme-mkpr)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-mkpr)
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues)
+- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 
 ## Reporting Issues
 
