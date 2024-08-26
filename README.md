@@ -1,6 +1,6 @@
 # [Material Kit 2 PRO React](http://demos.creative-tim.com/material-kit-pro-react/#/?ref=readme-mkpr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-kit-pro-react&text=Check%20Material%20kit%202%20Pro%React%20made%20by%20@CreativeTim%20#webdesign%20#kit%20#materialdesign%20#react%20https://www.creative-tim.com/product/material-kit-pro-react)
 
-![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-2.1.1-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed)
 
 ![Image](https://s3.amazonaws.com/creativetim_bucket/products/89/original/material-kit-2-pro-react.jpg)
 
@@ -41,7 +41,6 @@ During the development of this dashboard, we have used many existing resources f
 - [TypedJS](https://github.com/mattboldt/typed.js/) - A JavaScript Typing Animation Library.
 - [ChromaJS](https://gka.github.io/chroma.js/) - A small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.
 - [UUID](https://github.com/uuidjs/uuid) - JavaScript library for generating random id numbers.
-- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Material Kit 2 PRO React. You can use it to gain insights into your sources of traffic.
 
 Let us know your thoughts below. And good luck with development!
 
@@ -188,7 +187,6 @@ At present, we officially aim to support the last two versions of the following 
 - [License Agreement](https://www.creative-tim.com/license?ref=readme-mkpr)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-mkpr)
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues)
-- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 
 ## Reporting Issues
 
@@ -204,7 +202,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-mkpr)
+- Copyright 2024 [Creative Tim](https://www.creative-tim.com?ref=readme-mkpr)
 - Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mkpr)
 
 ## Useful Links
