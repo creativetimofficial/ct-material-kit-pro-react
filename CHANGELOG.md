@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.1.1] 2024-08-19
+
+- Update dependencies
+- Fix issues
+
 ## [2.1.0] 2023-05-22
 
 - Fix issues
